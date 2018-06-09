@@ -1,19 +1,24 @@
 //@ts-check
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AppBarTop from './components/AppBarTop';
+import Grid from '@material-ui/core/Grid';
+import { Paper } from '@material-ui/core';
+import Hero from './images/hero-2.png';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <AppBarTop />
+        <Grid container spacing={24}>
+          <Grid item xs={12}>
+              <img src={Hero} alt="" />
+          </Grid>
+        </Grid>
+        <div>
+
+        </div>
       </div>
     );
   }
