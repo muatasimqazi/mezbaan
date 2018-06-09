@@ -36,7 +36,6 @@ function AppBarTop(props) {
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
-        <SearchBar />
       </AppBar>
     </div>
   );

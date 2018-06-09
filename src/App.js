@@ -4,7 +4,7 @@ import './App.css';
 import AppBarTop from './components/AppBarTop';
 import Grid from '@material-ui/core/Grid';
 import { Paper } from '@material-ui/core';
-import Hero from './images/hero-2.png';
+import Hero from './components/Hero'
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
         <AppBarTop />
         <Grid container spacing={24}>
           <Grid item xs={12}>
-              <img src={Hero} alt="" />
+            <Hero />
           </Grid>
         </Grid>
         <div>
