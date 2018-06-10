@@ -54,12 +54,13 @@ function PostDetail(props) {
                   <span style={{ padding: 5 }}>{gig.category}</span>
 
                 </Typography>
-                <div style={{ display: 'flex' }}>
+                <div style={{ display: 'flex', marginBottom: 20 }}>
                   <Avatar
                     alt={gig.author.name}
                     src={gig.author.image}
+
                   />
-                  <Typography color="textSecondary">
+                  <Typography color="textSecondary"  style={{padding: 5}}>
 
                     {gig.author.name}
 

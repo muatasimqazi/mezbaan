@@ -27,8 +27,7 @@ const Features = () => (
                                 image={item.image}
                                 title={item.title}
                                 button={item.button}
-                                link={item.link}
-
+                                link={`${item.link}/${item.title.toLowerCase()}`}
                             />
                         </Col>
                     )

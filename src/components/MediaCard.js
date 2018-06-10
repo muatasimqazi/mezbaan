@@ -49,7 +49,7 @@ function MediaCard(props) {
                     </CardContent>
                     <CardActions style={{justifyContent:"center"}}>
                         {
-                            props.button ? <Button component={Link} to={props.link} elevation={0} variant="contained" color="primary" className={classes.button}>{props.button}</Button> : null
+                            props.button ? <Button style={{marginBottom: 20}} component={Link} to={props.link} elevation={0} variant="contained" color="primary" className={classes.button}>{props.button}</Button> : null
                         }
                         
                     </CardActions>

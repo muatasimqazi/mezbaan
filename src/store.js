@@ -11,21 +11,21 @@ export const features = [
         image: housekeeping,
         title: "Housekeeping",
         button: 'Learn More',
-        link: 'features/one',
+        link: 'feature',
 
     },
     {
         image: cooking,
         title: "Cooking",
         button: 'Learn More',
-        link: 'features/one',
+        link: 'feature',
 
     },
     {
         image: transportation,
         title: "Transpotation",
         button: 'Learn More',
-        link: 'features/one',
+        link: 'feature',
     }
 ]
 export
@@ -79,7 +79,7 @@ export
             image: "https://i.ndtvimg.com/i/2016-01/cleaning-kitchen-625_625x350_61454157830.jpg?downsize=630:380&output-quality=70&output-format=webp",
             title: "Cleaning House Weekly",
             description: 'I am available for cleaning living rooms, kitchens, bathrooms. Equipment will need to be provided.',
-            category: 'cat',
+            category: 'banking',
             payment: true,
             name: 'Book this',
             button: '',
@@ -95,7 +95,7 @@ export
             title: "Babysitting for ages 5-12",
             name: 'Cooking',
             description: 'I have 5 years of experience with babysitting in the Sammamish area. Available to drive to a location for providing these services.',
-            category: 'cat',
+            category: 'housekeeping',
             payment: true,
             button: '',
             link: 'post/',
@@ -110,7 +110,7 @@ export
             title: "English Style Dessert Catering",
             name: 'Housekeeping',
             description: 'In the Bellevue area, I can provide fast catering services for a wide array of desserts. Services can be provided for birthday parties, bachelor parties, weddings, and more.',
-            category: 'cat',
+            category: 'housekeeping',
             payment: true,
             button: '',
             link: 'post/',
@@ -125,7 +125,7 @@ export
             title: "Math Tutoring For Ages 12-14",
             name: 'Housekeeping',
             description: 'In Seattle area, I can drive to required location and tutor for middle school math including arithmetic, geometry and algebra.',
-            category: 'cat',
+            category: 'transportation',
             payment: true,
             button: '',
             link: 'post/',
@@ -156,8 +156,15 @@ export const explainers = [
 
 
 export const suggestions = [
-    { label: 'One' },
-    { label: 'Two' },
-    { label: 'Three' },
-    { label: 'Four' },
+    { label: 'transportation' },
+    { label: 'driving' },
+    { label: 'licensce' },
+    { label: 'cooking' },
+    { label: 'food' },
+    { label: 'cleaning' },
+    { label: 'housekeeping' },
+    { label: 'nanny' },
+    { label: 'banking' },
+    { label: 'finance' },
+    { label: 'money' },
 ];
