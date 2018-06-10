@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import Auth from './Auth'
+import Auth from './Auth';
+import logo from '../images/logo.png';
 
 const styles = {
     root: {
@@ -45,6 +46,9 @@ class Header extends Component {
                     <Toolbar>
                         <IconButton color="inherit" aria-label="Menu" style={styles.menuButton}>
                             <MenuIcon />
+                        </IconButton>
+                        <IconButton>
+                        <img src={logo}  height="30" width="40"/>
                         </IconButton>
                         <Typography variant="title" color="inherit" style={styles.flex}>
                             Mezbaan
