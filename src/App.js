@@ -17,11 +17,15 @@ class App extends Component {
     return (
       <div className="App">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <AppBarTop />
 
 =======
         <PostDetail />
         {/* <AppBarTop />
+>>>>>>> bt-branch2
+=======
+        <AppBarTop />
 >>>>>>> bt-branch2
         <SearchBar
           onChange={() => console.log('onChange')}
@@ -40,7 +44,11 @@ class App extends Component {
           <Grid item xs={12}>
             <Hero />
           </Grid>
+<<<<<<< HEAD
         </Grid> */}
+>>>>>>> bt-branch2
+=======
+        </Grid>
 >>>>>>> bt-branch2
         <div>
 
