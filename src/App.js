@@ -12,7 +12,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <AppBarTop />
+        <PostDetail />
+        {/* <AppBarTop />
         <SearchBar
           onChange={() => console.log('onChange')}
           onRequestSearch={() => console.log('onRequestSearch')}
@@ -21,7 +22,7 @@ class App extends Component {
           <Grid item xs={12}>
             <Hero />
           </Grid>
-        </Grid>
+        </Grid> */}
         <div>
 
         </div>
