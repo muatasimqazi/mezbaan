@@ -21,6 +21,7 @@ const styles = {
     heroText: {
         color: 'white',
         fontWeight: 200,
+        textAlign: 'center'
     },
 }
 

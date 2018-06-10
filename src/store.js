@@ -25,81 +25,81 @@ export const features = [
         link: 'features/one',
     }
 ]
-export 
-const gigs = [
-    {
-        image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
-        title: "Feature One",
-        name: 'Book this',
-        button: '',
-        link: 'post/something',
-    },
-    {
-        image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
-        title: "Feature One",
-        name: 'Cooking',
-        button: '',
-        link: 'post/something',
-    },
-    {
-        image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
-        title: "Feature One",
-        name: 'Housekeeping',
-        button: '',
-        link: 'post/something',
-    },
-    {
-        image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
-        title: "Feature One",
-        name: 'Housekeeping',
-        button: '',
-        link: 'post/something',
-    },
-    {
-        image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
-        title: "Feature One",
-        name: 'Housekeeping',
-        button: '',
-        link: 'post/something',
-    },
-    {
-        image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
-        title: "Feature One",
-        name: 'Housekeeping',
-        button: '',
-        link: 'post/something',
-    },
-    {
-        image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
-        title: "Feature One",
-        name: 'Housekeeping',
-        button: '',
-        link: 'post/something',
-    },
-    {
-        image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
-        title: "Feature One",
-        name: 'Housekeeping',
-        button: '',
-        link: 'post/something',
-    },
-    
-]
+export
+    const gigs = [
+        {
+            image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
+            title: "Feature One",
+            name: 'Book this',
+            button: '',
+            link: 'post/something',
+        },
+        {
+            image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
+            title: "Feature One",
+            name: 'Cooking',
+            button: '',
+            link: 'post/something',
+        },
+        {
+            image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
+            title: "Feature One",
+            name: 'Housekeeping',
+            button: '',
+            link: 'post/something',
+        },
+        {
+            image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
+            title: "Feature One",
+            name: 'Housekeeping',
+            button: '',
+            link: 'post/something',
+        },
+        {
+            image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
+            title: "Feature One",
+            name: 'Housekeeping',
+            button: '',
+            link: 'post/something',
+        },
+        {
+            image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
+            title: "Feature One",
+            name: 'Housekeeping',
+            button: '',
+            link: 'post/something',
+        },
+        {
+            image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
+            title: "Feature One",
+            name: 'Housekeeping',
+            button: '',
+            link: 'post/something',
+        },
+        {
+            image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
+            title: "Feature One",
+            name: 'Housekeeping',
+            button: '',
+            link: 'post/something',
+        },
+
+    ]
 export const explainers = [
     {
         title: 'one',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        icon: 'star'
+        icon: 'fa-user'
     },
     {
         title: 'one',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        icon: 'star'
+        icon: 'fa-car'
     },
     {
         title: 'one',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        icon: 'star'
+        icon: 'fa-book'
     },
 ]
 
@@ -109,4 +109,4 @@ export const suggestions = [
     { label: 'Two' },
     { label: 'Three' },
     { label: 'Four' },
-  ];
+];
