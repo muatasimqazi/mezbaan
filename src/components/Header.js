@@ -6,6 +6,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 const styles = {
     root: {
       flexGrow: 1,
+      backgroundColor: '#F9FAFB'
     },
     flex: {
       flex: 1,
