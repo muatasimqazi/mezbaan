@@ -62,7 +62,7 @@ class Header extends Component {
                             <MenuIcon />
                         </IconButton>
                         <IconButton>
-                            <img src={logo} height="30" width="40" />
+                        <a href="/"><img src={logo}  height="30" width="40"/></a>
                         </IconButton>
                         <Typography variant="title" color="inherit" style={styles.flex}>
                             Mezbaan
