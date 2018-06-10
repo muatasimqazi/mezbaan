@@ -7,7 +7,7 @@ import TextField from '@material-ui/core/TextField';
 import Paper from '@material-ui/core/Paper';
 import MenuItem from '@material-ui/core/MenuItem';
 import { withStyles } from '@material-ui/core/styles';
-import { suggestions } from '../store';
+import { suggestions, gigs } from '../store';
 
 function renderInput(inputProps) {
   const { classes, ref, ...other } = inputProps;
@@ -73,6 +73,7 @@ function getSuggestions(value) {
   return inputLength === 0
     ? []
     : suggestions.filter(suggestion => {
+
         const keep =
           count < 5 && suggestion.label.toLowerCase().slice(0, inputLength) === inputValue;
 
