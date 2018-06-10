@@ -28,17 +28,14 @@ const Features = () => (
                 {
                     features.map((item, index) =>
                         <Col sm={4} key={index}>
-                            <MediaCard 
+                            <MediaCard
                                 image={item.image}
                                 title={item.title}
                                 name={item.name}
                             />
                         </Col>
                     )
-
-
                 }
-
             </Row>
         </Container>
     </div>
