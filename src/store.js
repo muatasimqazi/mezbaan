@@ -102,3 +102,11 @@ export const explainers = [
         icon: 'star'
     },
 ]
+
+
+export const suggestions = [
+    { label: 'One' },
+    { label: 'Two' },
+    { label: 'Three' },
+    { label: 'Four' },
+  ];

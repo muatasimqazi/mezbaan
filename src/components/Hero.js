@@ -2,6 +2,8 @@
 import React from 'react';
 import hero from '../images/hero-2.png';
 import { Typography } from '@material-ui/core';
+import Search from './Search';
+import { Container, Row, Col } from 'react-grid-system';
 
 const styles = {
     /* The hero image */
@@ -30,6 +32,13 @@ const styles = {
 const Hero = () => (
     <div style={styles.hero}>
         <div style={styles.heroImage}>
+        <Container style={{marginTop: 64, marginBottom: 50, top: '60vh'}}>
+          <Row style={{justifyContent: 'space-around'}}>
+          <Col xs={8}>
+            <Search />
+            </Col>
+          </Row>
+        </Container>
             <div style={styles.heroText}>
             <Typography variant="display1" style={{'color': 'white'}}>Our mission is to connect people through culture and communities.</Typography>
                 
