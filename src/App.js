@@ -5,6 +5,7 @@ import { ROUTES } from './constants';
 import './App.css';
 import AppBarTop from './components/AppBarTop';
 import SearchBar from './components/SearchBar';
+import PostDetail from './components/PostDetail';
 import Grid from '@material-ui/core/Grid';
 import { Paper } from '@material-ui/core';
 import Hero from './components/Hero';
@@ -25,6 +26,7 @@ class App extends Component {
           <Switch>
             <Route exact path={ROUTES.main} component={MainView} />
             <Route path={ROUTES.feature} component={FeatureView} />
+            <Route path={ROUTES.post} component={PostDetail} />
             <Redirect to={ROUTES.main} />
           </Switch>
         </Router>
