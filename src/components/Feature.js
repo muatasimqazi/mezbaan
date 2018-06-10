@@ -48,10 +48,10 @@ function FeatureView(props) {
                         <CardContent>
 
                             {
-                                filterdGigs.map((item) => {
+                                filterdGigs.map((item, index) => {
                                     return (
                                         <div>
-                                        <h1>{item.title}</h1>
+                                        <a href={`http://localhost:3000/${item.link}${item.id}`}><h1>{item.title}</h1></a>
                                         <p>{item.description}</p>
                                         </div>
                                     )

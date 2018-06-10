@@ -43,7 +43,8 @@ export
             author: {
                 name: "Adil",
                 image: "https://material-ui.com/static/images/uxceo-128.jpg"
-            }
+            },
+            id: 1,
         },
         {
             image: car,
@@ -55,6 +56,7 @@ export
             button: '',
             link: 'post/',
             icon: 'fa-car',
+            id: 2,
             author: {
                 name: "Steve",
                 image: "https://material-ui.com/static/images/uxceo-128.jpg"
@@ -73,7 +75,8 @@ export
             author: {
                 name: "Sheela",
                 image: "https://material-ui.com/static/images/uxceo-128.jpg"
-            }
+            },
+            id: 3,
         },
         {
             image: "https://i.ndtvimg.com/i/2016-01/cleaning-kitchen-625_625x350_61454157830.jpg?downsize=630:380&output-quality=70&output-format=webp",
@@ -85,6 +88,7 @@ export
             button: '',
             link: 'post/',
             icon: 'fa-car',
+            id: 4,
             author: {
                 name: "Adele A",
                 image: "https://material-ui.com/static/images/uxceo-128.jpg"
@@ -100,6 +104,7 @@ export
             button: '',
             link: 'post/',
             icon: 'fa-car',
+            id: 5,
             author: {
                 name: "Adele A",
                 image: "https://material-ui.com/static/images/uxceo-128.jpg"
@@ -115,10 +120,12 @@ export
             button: '',
             link: 'post/',
             icon: 'fa-car',
+            id: 6,
             author: {
                 name: "Adele A",
                 image: "https://material-ui.com/static/images/uxceo-128.jpg"
-            }
+            },
+
         },
         {
             image: "http://www.stlawu.edu/sites/default/files/page-images/ASUtutoring_003s_0.jpg",
@@ -130,6 +137,7 @@ export
             button: '',
             link: 'post/',
             icon: 'fa-car',
+            id: 7,
             author: {
                 name: "Adele A",
                 image: "https://material-ui.com/static/images/uxceo-128.jpg"
