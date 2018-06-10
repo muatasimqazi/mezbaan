@@ -5,6 +5,7 @@ import { ROUTES } from './constants';
 import './App.css';
 import AppBarTop from './components/AppBarTop';
 import SearchBar from './components/SearchBar';
+import PostDetail from './components/PostDetail';
 import Grid from '@material-ui/core/Grid';
 import { Paper } from '@material-ui/core';
 import Hero from './components/Hero';
@@ -15,12 +16,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+<<<<<<< HEAD
         <AppBarTop />
 
+=======
+        <PostDetail />
+        {/* <AppBarTop />
+>>>>>>> bt-branch2
         <SearchBar
           onChange={() => console.log('onChange')}
           onRequestSearch={() => console.log('onRequestSearch')}
         />
+<<<<<<< HEAD
         <Router>
           <Switch>
             <Route exact path={ROUTES.main} component={MainView} />
@@ -28,6 +35,13 @@ class App extends Component {
             <Redirect to={ROUTES.main} />
           </Switch>
         </Router>
+=======
+        <Grid container spacing={24}>
+          <Grid item xs={12}>
+            <Hero />
+          </Grid>
+        </Grid> */}
+>>>>>>> bt-branch2
         <div>
 
         </div>
