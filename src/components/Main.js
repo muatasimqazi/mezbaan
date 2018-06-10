@@ -2,6 +2,8 @@
 import React, { Component } from "react";
 import Hero from "./Hero";
 import Features from "./Features";
+import ExplainView from './Explain';
+import Gigs from "./Gigs";
 
 class MainView extends Component {
 
@@ -10,6 +12,8 @@ class MainView extends Component {
             <div>
             <Hero />
             <Features />
+            <ExplainView/>
+            <Gigs />
             </div>
 
         );
