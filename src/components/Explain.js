@@ -1,6 +1,6 @@
 //@ts-check
 import React, { Component, Fragment } from 'react';
-import { Typography, Grid, Icon } from '@material-ui/core';
+import { Typography, Grid, Icon, Avatar } from '@material-ui/core';
 import { explainers } from '../store';
 
 
@@ -40,13 +40,17 @@ class ExplainView extends Component {
                                     </Grid>
                                     <Grid item sm={8} xs={10}>
                                         <Fragment>
-                                            <Typography
-                                                align="left"
-                                                variant="title"
-                                                style={{ marginBottom: 10 }}
-                                            >
-                                                Describe the task
-                                        </Typography>
+                                            <div style={{ display: 'flex' }}>
+                                                <Avatar>{index + 1}</Avatar>
+                                                <Typography
+                                                    align="left"
+                                                    variant="title"
+                                                    style={{ padding: 10, color: '#242A30' }}
+                                                >
+                                                    Describe the task
+
+                                            </Typography>
+                                            </div>
                                             <Typography align="left">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     </Typography>

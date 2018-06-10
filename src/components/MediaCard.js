@@ -12,6 +12,7 @@ import { Route, Link } from 'react-router-dom';
 const styles = {
     card: {
         maxWidth: 345,
+        marginBottom: '3em',
     },
     media: {
         height: 0,
@@ -43,7 +44,10 @@ function MediaCard(props) {
 
                     </CardContent>
                     <CardActions>
-                        <Button component={Link} to={props.link} fullWidth elevation={0} variant="contained" color="primary" className={classes.button}>{props.button}</Button>
+                        {
+                            props.button ? <Button component={Link} to={props.link} fullWidth elevation={0} variant="contained" color="primary" className={classes.button}>{props.button}</Button> : null
+                        }
+                        
                     </CardActions>
                 </div>
             </Card>

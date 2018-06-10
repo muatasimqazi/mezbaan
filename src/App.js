@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Redirect, Route } from 'react-router-d
 import { ROUTES } from './constants';
 import './App.css';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import PostDetail from './components/PostDetail';
 import Grid from '@material-ui/core/Grid';
@@ -32,6 +33,7 @@ class App extends Component {
         <div>
 
         </div>
+        <Footer />
       </div>
     );
   }

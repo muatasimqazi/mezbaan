@@ -75,7 +75,15 @@ const gigs = [
         name: 'Housekeeping',
         button: '',
         link: 'post/something',
-    }
+    },
+    {
+        image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
+        title: "Feature One",
+        name: 'Housekeeping',
+        button: '',
+        link: 'post/something',
+    },
+    
 ]
 export const explainers = [
     {
