@@ -10,18 +10,21 @@ const features = [
         image: housekeeping,
         title: "Housekeeping",
         button: 'Learn More',
+        link: 'one',
 
     },
     {
         image: cooking,
         title: "Cooking",
         button: 'Learn More',
+        link: 'one',
 
     },
     {
         image: transportation,
         title: "Transpotation",
         button: 'Learn More',
+        link: 'one',
     }
 ]
 
@@ -37,6 +40,7 @@ const Features = () => (
                                 image={item.image}
                                 title={item.title}
                                 button={item.button}
+                                link={item.link}
                                 
                             />
                         </Col>

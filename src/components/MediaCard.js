@@ -43,8 +43,8 @@ function MediaCard(props) {
                 
                 </CardContent>
                 <CardActions>
-                    <Link to="/features/feature1">Add a book</Link>
-                    <Button fullWidth elevation={0} variant="contained" color="primary" className={classes.button}>{props.name}</Button>
+                <Link to={props.link}>Add a book</Link>
+                <Button fullWidth elevation={0} variant="contained" color="primary" className={classes.button}>{props.button}</Button>
                 </CardActions>
                 </div>
             </Card>

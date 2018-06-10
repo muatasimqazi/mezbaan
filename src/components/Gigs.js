@@ -8,37 +8,52 @@ const gigs = [
         image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
         title: "Feature One",
         name: 'Book this',
+        button: '',
+        link: 'something',
+
 
     },
     {
         image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
         title: "Feature One",
         name: 'Cooking',
+        button: '',
+        link: 'something',
     },
     {
         image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
         title: "Feature One",
         name: 'Housekeeping',
+        button: '',
+        link: 'something',
     },
     {
         image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
         title: "Feature One",
         name: 'Housekeeping',
+        button: '',
+        link: 'something',
     },
     {
         image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
         title: "Feature One",
         name: 'Housekeeping',
+        button: '',
+        link: 'something',
     },
     {
         image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
         title: "Feature One",
         name: 'Housekeeping',
+        button: '',
+        link: 'something',
     },
     {
         image: "https://res.cloudinary.com/taskrabbit-com/image/upload/v1489003789/ma4yidiqwmcbgzf7yvwt.jpg",
         title: "Feature One",
         name: 'Housekeeping',
+        button: '',
+        link: 'something',
     }
 ]
 
@@ -55,7 +70,8 @@ class Gigs extends Component {
                                     <MediaCard
                                         image={gig.image}
                                         title={gig.title}
-                                        name={gig.name}
+                                        button={gig.button}
+                                        link={gig.link}
                                     />
                                 </Col>
                             )
