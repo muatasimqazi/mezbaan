@@ -18,32 +18,27 @@ render() {
         <div style={styles.footer}>
             <Container>
                 <Row>
-                    <Col sm={4} debug>
+                    <Col sm={8} >
                         <Typography variant="headline" component="h3" style={styles.content}>
-                            This is...
+                        <i class="fab fa-facebook" style={{padding:'10px'}}></i><i class="fab fa-twitter" style={{padding:'10px'}}></i><i class="fab fa-instagram" style={{padding:'10px'}}></i>
             </Typography>
                         <Typography component="p" style={styles.content}>
-                            Lorem impsum lorem ipsum lorem ipsum.
+                            Check Us Out On Social Media
             </Typography>
-                    </Col>
 
-                    <Col sm={4} debug>
-                        <Typography variant="headline" component="h3" style={styles.content}>
-                            This is...
-            </Typography>
-                        <Typography component="p" style={styles.content}>
-                            Lorem impsum lorem ipsum lorem ipsum.
-            </Typography>
+                    </Col>
+                    <Col sm={4} style={{textAlign:"flex-end"}}>
+                        <Typography variant="subheading" component="h4" style={styles.content}>
+                            <Row>About Us</Row>
+                            <Row>FAQ</Row>
+                            <Row>Help</Row>
+                            <Row>Careers</Row>
+                            <Row>Blog</Row>
+                            <Row>Terms & Privacy</Row>
+                        </Typography>
                     </Col>
                 </Row>
-                <Col sm={4} debug>
-                    <Typography variant="headline" component="h3" style={styles.content}>
-                        This is...
-            </Typography>
-                    <Typography component="p" style={styles.content}>
-                        Lorem impsum lorem ipsum lorem ipsum.
-            </Typography>
-                </Col>
+
             </Container>
         </div>
     );
