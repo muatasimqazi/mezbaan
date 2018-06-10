@@ -1,5 +1,7 @@
+//@ts-check
 import React from 'react';
 import hero from '../images/hero-2.png';
+import { Typography } from '@material-ui/core';
 
 const styles = {
     /* The hero image */
@@ -29,7 +31,8 @@ const Hero = () => (
     <div style={styles.hero}>
         <div style={styles.heroImage}>
             <div style={styles.heroText}>
-                <h1>Our mission is to connect people with culture and communities.</h1>
+            <Typography variant="display1" style={{'color': 'white'}}>Our mission is to connect people through culture and communities.</Typography>
+                
                 
             </div>
         </div>

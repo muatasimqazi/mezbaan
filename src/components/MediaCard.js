@@ -42,7 +42,7 @@ function MediaCard(props) {
                 
                 </CardContent>
                 <CardActions>
-                    <Button fullWidth elevation={0} variant="contained" color="primary" className={classes.button}>{props.name}</Button>
+                    <Button fullWidth elevation={0} variant="contained" color="primary" className={classes.button}>{props.button}</Button>
                 </CardActions>
                 </div>
             </Card>
