@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Redirect, Route } from 'react-router-dom';
 import { ROUTES } from './constants';
 import './App.css';
-import AppBarTop from './components/AppBarTop';
+import Header from './components/Header';
 import SearchBar from './components/SearchBar';
 import PostDetail from './components/PostDetail';
 import Grid from '@material-ui/core/Grid';
@@ -16,8 +16,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <AppBarTop />
-
+        <Header />
         <SearchBar
           onChange={() => console.log('onChange')}
           onRequestSearch={() => console.log('onRequestSearch')}

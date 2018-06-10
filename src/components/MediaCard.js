@@ -36,16 +36,15 @@ function MediaCard(props) {
                     title="Contemplative Reptile"
                 />
                 <div className={classes.content}>
-                <CardContent>
-                    <Typography gutterBottom variant="headline" component="h2">
-                        {props.title}
-          </Typography>
-                
-                </CardContent>
-                <CardActions>
-                <Link to={props.link}>Add a book</Link>
-                <Button fullWidth elevation={0} variant="contained" color="primary" className={classes.button}>{props.button}</Button>
-                </CardActions>
+                    <CardContent>
+                        <Typography gutterBottom variant="headline" component="h2" align="center">
+                            {props.title}
+                        </Typography>
+
+                    </CardContent>
+                    <CardActions>
+                        <Button component={Link} to={props.link} fullWidth elevation={0} variant="contained" color="primary" className={classes.button}>{props.button}</Button>
+                    </CardActions>
                 </div>
             </Card>
         </div>

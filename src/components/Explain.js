@@ -1,22 +1,62 @@
 //@ts-check
-import React, { Component } from 'react';
-import { Typography } from '@material-ui/core';
+import React, { Component, Fragment } from 'react';
+import { Typography, Grid, Icon } from '@material-ui/core';
+import { explainers } from '../store';
+
+
 const styles = {
     explain: {
         backgroundColor: '#F9FAFB',
-        height: '40vh',
         marginTop: 20,
         marginBottom: 20,
-        textAlign: 'left',
+        paddingTop: '6em',
+    },
+    icons: {
+        fontSize: '100px',
     }
 }
 class ExplainView extends Component {
     render() {
         return (
             <div style={styles.explain}>
-                <Typography gutterBottom variant="headline" component="h2">
-                    How It Works
-                </Typography>
+                <Grid>
+                    <Typography
+                        gutterBottom
+                        variant="display1"
+                        component="h2"
+                        style={{ textAlign: "center", marginBottom: '1em' }}
+                    >
+                        How It Works
+                        </Typography>
+                </Grid>
+                <Grid container justify="center" spacing={16}>
+                    <Grid item sm={6} xs={12}>
+                        {
+                            explainers.map((item, index) =>
+
+                                <Grid container direction={index % 2 == 0 ? "row-reverse" : "row"} spacing={24} key={index} style={styles.icons}>
+                                    <Grid item sm={4} xs={2} style={{ alignSelf: 'baseline' }}>
+                                        <Icon style={styles.icons}>{item.icon}</Icon>
+                                    </Grid>
+                                    <Grid item sm={8} xs={10}>
+                                        <Fragment>
+                                            <Typography
+                                                align="left"
+                                                variant="title"
+                                                style={{ marginBottom: 10 }}
+                                            >
+                                                Describe the task
+                                        </Typography>
+                                            <Typography align="left">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </Typography>
+                                        </Fragment>
+                                    </Grid>
+                                </Grid>
+                            )
+                        }
+                    </Grid>
+                </Grid>
             </div>
         );
     }

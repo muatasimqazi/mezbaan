@@ -1,5 +1,5 @@
 export const ROUTES = {
     main: '/',
-    feature: '/features/:featuresName',
-    post: '/posts/:postId',
+    feature: '/feature/:featuresName',
+    post: '/post/:postId',
 }
