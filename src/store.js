@@ -125,11 +125,11 @@ export
             title: "Math Tutoring For Ages 12-14",
             name: 'Housekeeping',
             description: 'In Seattle area, I can drive to required location and tutor for middle school math including arithmetic, geometry and algebra.',
-            category: 'transportation',
+            category: 'Learning',
             payment: true,
             button: '',
             link: 'post/',
-            icon: 'fa-car',
+            icon: 'fa-book',
             author: {
                 name: "Adele A",
                 image: "https://material-ui.com/static/images/uxceo-128.jpg"
