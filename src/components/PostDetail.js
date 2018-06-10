@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Container, Row, Col } from 'react-grid-system';
+import { gigs } from '../store';
 
 const styles = {
   card: {
@@ -30,28 +31,38 @@ const styles = {
 function PostDetail(props) {
   const { classes } = props;
   const bull = <span className={classes.bullet}>•</span>;
+  const index = props.match.params.postId - 1;
 
   return (
-    <div style={{marginTop: 70, marginBottom: 70 }}>
+    <div style={{ marginTop: 70, marginBottom: 70 }}>
       <Container>
         <Row>
           <Col sm={10}>
             <Card elevation={0} className={classes.card}>
               <CardContent>
                 <Typography variant="headline" component="h2">
-                  Title
-          </Typography>
+
+                  {
+                    gigs[index].title
+                  }
+                </Typography>
                 <Typography className={classes.pos} color="textSecondary">
-                  category
-          </Typography>
+               
+                      <i className={`fas ${gigs[index].icon}`} style={{ color: '#bdbdbd' }}></i>
+                      <span style={{ padding: 5 }}>{gigs[index].category}</span>
+                 
+                </Typography>
                 <Typography component="p">
-                  description jdhkjashdkahskdhsak adlkjlasjdajs hsdkjahksahksaj hsakhksahashsalkh
-                  more description jhdkjahdkahsdkahskdhjaljdsajdaslkjads jhsdkjhsadhsd hdHSADL LjdljsldJ
-            this goes on...<br />
+                  {
+                    gigs[index].description
+                  }
+                  <br />
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Book Now</Button>
+                <Button variant="contained" color="seconday">
+                  Book Now
+      </Button>
               </CardActions>
             </Card>
           </Col>

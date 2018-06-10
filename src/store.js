@@ -30,32 +30,44 @@ export
         {
             image: "https://i.ndtvimg.com/i/2016-01/cleaning-kitchen-625_625x350_61454157830.jpg?downsize=630:380&output-quality=70&output-format=webp",
             title: "Cleaning House Weekly",
+            description: 'look',
+            category: 'cat',
+            payment: true,
             name: 'Book this',
             button: '',
-            link: 'post/something',
+            link: 'post/',
+            icon: 'fa-car'
         },
         {
             image: "https://www.kveller.com/wp-content/uploads/2016/04/iStock_000031480158_Medium-1200x800.jpg",
             title: "Babysitting for ages 5-12",
             name: 'Cooking',
+            description: 'look',
+            category: 'cat',
+            payment: true,
             button: '',
-            link: 'post/something',
+            link: 'post/',
         },
         {
             image: "http://img1.mashed.com/img/gallery/easy-dishes-that-make-you-seem-like-a-professional-chef/intro.jpg",
             title: "English Style Dessert Catering",
             name: 'Housekeeping',
+            description: 'look',
+            category: 'cat',
+            payment: true,
             button: '',
-            link: 'post/something',
+            link: 'post/',
         },
         {
             image: "http://www.stlawu.edu/sites/default/files/page-images/ASUtutoring_003s_0.jpg",
             title: "Math Tutoring For Ages 12-14",
             name: 'Housekeeping',
+            description: 'look',
+            category: 'cat',
+            payment: true,
             button: '',
-            link: 'post/something',
+            link: 'post/',
         },
-        
     ]
 export const explainers = [
     {
