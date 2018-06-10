@@ -42,6 +42,9 @@ function MediaCard(props) {
                         <Typography gutterBottom variant="headline" component="h2" align="center">
                             {props.title}
                         </Typography>
+                        <Typography gutterBottom variant="body1" component="h2" align="center">
+                            {props.description}
+                        </Typography>
 
                     </CardContent>
                     <CardActions style={{justifyContent:"center"}}>

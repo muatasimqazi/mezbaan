@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-grid-system';
 import MediaCard from './MediaCard';
 import { gigs } from '../store';
-
-
-
 class Gigs extends Component {
     render() {
         return (
@@ -15,10 +12,11 @@ class Gigs extends Component {
                         {
                             gigs.map((gig, index) =>
                                 <Col sm={3} key={index}>
-                                    <Link to={gig.link} style={{textDecoration: 'none'}}>
+                                    <Link to={`${gig.link}${index + 1}`} style={{textDecoration: 'none'}}>
                                         <MediaCard
                                             image={gig.image}
                                             title={gig.title}
+                                            description={gig.description}
                                             button={gig.button}
                                             link={gig.link}
                                         />
