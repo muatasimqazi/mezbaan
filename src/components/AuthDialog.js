@@ -44,12 +44,11 @@ class AuthDialog extends React.Component {
                         <DialogContentText>
                             <Container>
                                 <Row>
-                                    <Col className="auth" sm={12}>
+                                    <Col sm={12}>
                                      {this.props.children}
                                     </Col>
                                 </Row>
                             </Container>
-
 
                         </DialogContentText>
                     </DialogContent>
@@ -58,7 +57,7 @@ class AuthDialog extends React.Component {
                             Cancel
                         </Button>
                         <Button onClick={this.props.handleClose} color="primary" autoFocus>
-                            Login
+                           {this.props.title}
                         </Button>
                     </DialogActions>
                 </Dialog>

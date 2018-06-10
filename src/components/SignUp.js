@@ -20,7 +20,7 @@ class SignUp extends Component {
             <div>
                 <AuthDialog title="Sign Up" open={this.props.open} handleClose={this.props.handleClose} >
                     <form onSubmit={evt => this.handleSubmit(evt)}>
-                    <TextField
+                        <TextField
                             label='Name'
                             name='name'
                             onChange={this.handleChange}
@@ -61,10 +61,12 @@ class SignUp extends Component {
                             />
                             <Button
                                 label="SignUp"
-                                primary={true}
+                                color="secondary"
                                 style={styles.button}
                                 type="submit"
                             />
+
+
                         </div>
                     </form>
                 </AuthDialog>

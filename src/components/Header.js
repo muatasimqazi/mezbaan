@@ -25,19 +25,32 @@ class Header extends Component {
         super(props);
         this.state = {
             open: false,
+            isLogin: false,
         }
 
-        this.handleClickOpen = this.handleClickOpen.bind(this);
+        this.handleLogin = this.handleLogin.bind(this);
+        this.handleSignUp = this.handleSignUp.bind(this);
         this.handleClose = this.handleClose.bind(this);
     }
 
-    handleClickOpen() {
+    handleLogin() {
+        this.setState({
+            open: !this.state.open,
+            isLogin: true,
+        })
+    };
+
+    handleSignUp() {
         this.setState({
             open: !this.state.open,
         })
     };
     handleClose() {
-        this.setState({ open: false });
+        this.setState({ 
+            open: false,
+            isLogin: false,
+           
+        });
     };
 
     render() {
@@ -49,17 +62,25 @@ class Header extends Component {
                             <MenuIcon />
                         </IconButton>
                         <IconButton>
-                        <img src={logo}  height="30" width="40"/>
+                            <img src={logo} height="30" width="40" />
                         </IconButton>
                         <Typography variant="title" color="inherit" style={styles.flex}>
                             Mezbaan
                     </Typography>
-                        <Button color="inherit" onClick={this.handleClickOpen}>Login</Button>
-                        <Button color="inherit" onClick={this.handleClickOpen}>Signup</Button>
+                        <Button color="inherit" onClick={this.handleLogin}>Login</Button>
+                        <Button color="inherit" onClick={this.handleSignUp}>Signup</Button>
                     </Toolbar>
                 </AppBar>
-                <Login open={this.state.open} handleClose={this.handleClose}/>
-                <SignUp open={this.state.open} handleClose={this.handleClose}/>
+                {
+                    this.state.isLogin
+
+                        ?
+                        <Login open={this.state.open} handleClose={this.handleClose} />
+                        :
+                        <SignUp open={this.state.open} handleClose={this.handleClose} />
+                }
+
+
             </div>
         );
     }
