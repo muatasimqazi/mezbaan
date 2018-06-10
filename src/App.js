@@ -16,49 +16,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         <AppBarTop />
 
-=======
-        <PostDetail />
-        {/* <AppBarTop />
->>>>>>> bt-branch2
-=======
-        <AppBarTop />
->>>>>>> bt-branch2
-=======
-        <PostDetail />
-        {/* <AppBarTop />
->>>>>>> bt-branch2
         <SearchBar
           onChange={() => console.log('onChange')}
           onRequestSearch={() => console.log('onRequestSearch')}
         />
-<<<<<<< HEAD
         <Router>
           <Switch>
             <Route exact path={ROUTES.main} component={MainView} />
             <Route path={ROUTES.feature} component={FeatureView} />
+            <Route path={ROUTES.post} component={PostDetail} />
             <Redirect to={ROUTES.main} />
           </Switch>
         </Router>
-=======
-        <Grid container spacing={24}>
-          <Grid item xs={12}>
-            <Hero />
-          </Grid>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </Grid> */}
->>>>>>> bt-branch2
-=======
-        </Grid>
->>>>>>> bt-branch2
-=======
-        </Grid> */}
->>>>>>> bt-branch2
         <div>
 
         </div>

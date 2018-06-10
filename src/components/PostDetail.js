@@ -13,6 +13,7 @@ const styles = {
     minWidth: 275,
     textAlign: 'left',
     maxWidth: 800,
+    marginTop: 24,
   },
   bullet: {
     display: 'inline-block',
@@ -34,7 +35,7 @@ function PostDetail(props) {
 
   return (
     <div>
-      <AppBarTop />
+
       <Card elevation = {0} className={classes.card}>
         <CardContent>
           <Typography variant="headline" component="h2">

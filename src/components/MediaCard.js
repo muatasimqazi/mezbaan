@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { Route, Link } from 'react-router-dom';
 
 const styles = {
     card: {
@@ -42,6 +43,7 @@ function MediaCard(props) {
                 
                 </CardContent>
                 <CardActions>
+                    <Link to="/features/feature1">Add a book</Link>
                     <Button fullWidth elevation={0} variant="contained" color="primary" className={classes.button}>{props.name}</Button>
                 </CardActions>
                 </div>
