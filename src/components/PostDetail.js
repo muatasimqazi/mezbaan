@@ -1,109 +1,60 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import MenuItem from '@material-ui/core/MenuItem';
-import TextField from '@material-ui/core/TextField';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 import AppBarTop from './AppBarTop';
 
-const styles = theme => ({
-  container: {
-    display: 'flex',
-    flexWrap: 'wrap',
+const styles = {
+  card: {
+    minWidth: 275,
+    textAlign: 'left',
+    maxWidth: 800,
   },
-  textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
-    width: 200,
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
   },
-  menu: {
-    width: 200,
+  title: {
+    marginBottom: 16,
+    fontSize: 14,
   },
-});
+  pos: {
+    marginBottom: 12,
+  },
+};
 
-const currencies = [
-  {
-    value: 'USD',
-    label: '$',
-  },
-  {
-    value: 'EUR',
-    label: '€',
-  },
-  {
-    value: 'BTC',
-    label: '฿',
-  },
-  {
-    value: 'JPY',
-    label: '¥',
-  },
-];
+function PostDetail(props) {
+  const { classes } = props;
+  const bull = <span className={classes.bullet}>•</span>;
 
-class PostDetail extends React.Component {
-  state = {
-    name: 'Cat in the Hat',
-    age: '',
-    multiline: 'Controlled',
-    currency: 'EUR',
-  };
-
-  handleChange = name => event => {
-    this.setState({
-      [name]: event.target.value,
-    });
-  };
-
-  render() {
-    const { classes } = this.props;
-
-    return (
-        <div>
-        <AppBarTop />
-      <form className={classes.container} noValidate autoComplete="off">
-        <TextField
-          id="name"
-          label="Name"
-          className={classes.textField}
-          value={this.state.name}
-          onChange={this.handleChange('name')}
-          margin="normal"
-        />
-        <TextField
-          id="select-currency"
-          select
-          label="Select"
-          className={classes.textField}
-          value={this.state.currency}
-          onChange={this.handleChange('currency')}
-          SelectProps={{
-            MenuProps: {
-              className: classes.menu,
-            },
-          }}
-          helperText="Please select your currency"
-          margin="normal"
-        >
-          {currencies.map(option => (
-            <MenuItem key={option.value} value={option.value}>
-              {option.label}
-            </MenuItem>
-          ))}
-        </TextField>
-        <TextField
-          id="full-width"
-          label="Label"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          placeholder="Placeholder"
-          helperText=""
-          fullWidth
-          margin="normal"
-        />
-      </form>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <AppBarTop />
+      <Card elevation = {0} className={classes.card}>
+        <CardContent>
+          <Typography variant="headline" component="h2">
+            Title
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            category
+          </Typography>
+          <Typography component="p">
+            description jdhkjashdkahskdhsak adlkjlasjdajs hsdkjahksahksaj hsakhksahashsalkh
+            more description jhdkjahdkahsdkahskdhjaljdsajdaslkjads jhsdkjhsadhsd hdHSADL LjdljsldJ
+            this goes on...<br />
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small">Book Now</Button>
+        </CardActions>
+      </Card>
+    </div>
+  );
 }
 
 PostDetail.propTypes = {
