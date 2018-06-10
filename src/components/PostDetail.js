@@ -31,8 +31,13 @@ const styles = {
 function PostDetail(props) {
   const { classes } = props;
   const bull = <span className={classes.bullet}>•</span>;
-  const index = props.match.params.postId - 1;
-  const gig = gigs[index];
+  const index = props.match.params.postId;
+
+
+  const gig = gigs.filter(gig => gig.id === parseInt(index))[0];
+  console.log(gig)
+
+
 
   return (
     <div style={{ marginTop: 70, marginBottom: 70 }}>
