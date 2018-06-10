@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import Auth from './Auth';
 import logo from '../images/logo.png';
+import Login from './Login'
+import SignUp from './SignUp'
 
 const styles = {
     root: {
@@ -57,7 +58,8 @@ class Header extends Component {
                         <Button color="inherit" onClick={this.handleClickOpen}>Signup</Button>
                     </Toolbar>
                 </AppBar>
-                <Auth open={this.state.open} handleClose={this.handleClose}/>
+                <Login open={this.state.open} handleClose={this.handleClose}/>
+                <SignUp open={this.state.open} handleClose={this.handleClose}/>
             </div>
         );
     }
