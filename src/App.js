@@ -5,7 +5,8 @@ import AppBarTop from './components/AppBarTop';
 import SearchBar from './components/SearchBar';
 import Grid from '@material-ui/core/Grid';
 import { Paper } from '@material-ui/core';
-import Hero from './components/Hero'
+import Hero from './components/Hero';
+import Features from './components/Features';
 
 class App extends Component {
   render() {
@@ -19,6 +20,9 @@ class App extends Component {
         <Grid container spacing={24}>
           <Grid item xs={12}>
             <Hero />
+          </Grid>
+          <Grid item xs={12}>
+            <Features />
           </Grid>
         </Grid>
         <div>
