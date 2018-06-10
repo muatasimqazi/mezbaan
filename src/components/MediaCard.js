@@ -20,6 +20,7 @@ const styles = {
     },
     button: {
         textAlign: 'center',
+        color: 'white'
     },
     content: {
         background: '#F9FAFB',
@@ -43,9 +44,9 @@ function MediaCard(props) {
                         </Typography>
 
                     </CardContent>
-                    <CardActions>
+                    <CardActions style={{justifyContent:"center"}}>
                         {
-                            props.button ? <Button component={Link} to={props.link} fullWidth elevation={0} variant="contained" color="primary" className={classes.button}>{props.button}</Button> : null
+                            props.button ? <Button component={Link} to={props.link} elevation={0} variant="contained" color="primary" className={classes.button}>{props.button}</Button> : null
                         }
                         
                     </CardActions>

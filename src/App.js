@@ -18,7 +18,7 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       // light: will be calculated from palette.primary.main,
-      main: '#ff4400',
+      main: '#50af34',
       // dark: will be calculated from palette.primary.main,
       // contrastText: will be calculated to contast with palette.primary.main
     },
@@ -33,6 +33,15 @@ const theme = createMuiTheme({
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        currentUser: undefined,
+        email: "test1@test.com",
+        password: "jk25hjk4jkvcx2%;",
+        displayName: "Tester"
+    }
+}
   render() {
     return (
       <div className="App">

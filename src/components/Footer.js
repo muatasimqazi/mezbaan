@@ -4,7 +4,7 @@ import { Paper, Typography } from '@material-ui/core';
 const styles = {
     footer: {
         height: '20vh',
-        background: '#ff4400',
+        background: '#66717d',
         padding: 50,
     },
     content: {
