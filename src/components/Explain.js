@@ -48,12 +48,12 @@ class ExplainView extends Component {
                                                     variant="title"
                                                     style={{ padding: 10, color: '#0000008a' }}
                                                 >
-                                                    Describe the task
+                                                    {item.title}
 
                                             </Typography>
                                             </div>
                                             <Typography align="left">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                {item.description}
                                     </Typography>
                                         </Fragment>
                                     </Grid>
