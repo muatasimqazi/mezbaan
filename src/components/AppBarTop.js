@@ -34,6 +34,7 @@ function AppBarTop(props) {
             Mezbaan
           </Typography>
           <Button color="inherit">Login</Button>
+          <Button color="inherit">Signup</Button>
         </Toolbar>
       </AppBar>
     </div>

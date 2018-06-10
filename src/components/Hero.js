@@ -29,8 +29,8 @@ const Hero = () => (
     <div style={styles.hero}>
         <div style={styles.heroImage}>
             <div style={styles.heroText}>
-                <h1>Mezbaan</h1>
-                <p>Connecting Communities</p>
+                <h1>Our mission is to connect people with culture and communities.</h1>
+                
             </div>
         </div>
     </div>
