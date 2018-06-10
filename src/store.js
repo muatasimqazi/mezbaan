@@ -2,6 +2,9 @@
 const housekeeping = require('./images/housekeeping.jpg');
 const transportation = require('./images/driving.jpg');
 const cooking = require('./images/cooking.jpg');
+const money = require('./images/money.jpg');
+const kid = require('./images/kid.jpg');
+const car = require('./images/car.jpg');
 
 export const features = [
     {
@@ -28,6 +31,51 @@ export const features = [
 export
     const gigs = [
         {
+            image: money,
+            title: "Open A Bank Account",
+            description: 'I work in banking and will help you open a bank account.',
+            category: 'Finances',
+            payment: true,
+            name: 'Book this',
+            button: '',
+            link: 'post/',
+            icon: 'fa-money-check-alt',
+            author: {
+                name: "Adil",
+                image: "https://material-ui.com/static/images/uxceo-128.jpg"
+            }
+        },
+        {
+            image: car,
+            title: "Help You Learn Driving",
+            description: 'I can help you prepare for your driver license exam.',
+            category: 'Transportation',
+            payment: true,
+            name: 'Book this',
+            button: '',
+            link: 'post/',
+            icon: 'fa-car',
+            author: {
+                name: "Steve",
+                image: "https://material-ui.com/static/images/uxceo-128.jpg"
+            }
+        },
+        {
+            image: kid,
+            title: "I will baby sit your kids",
+            description: 'I am an experienced nanny and am available to baby sit your kids. Enjoy your night out and let me take care of your kids.',
+            category: 'Housekeeping',
+            payment: true,
+            name: 'Book this',
+            button: '',
+            link: 'post/',
+            icon: 'fa-child',
+            author: {
+                name: "Sheela",
+                image: "https://material-ui.com/static/images/uxceo-128.jpg"
+            }
+        },
+        {
             image: "https://i.ndtvimg.com/i/2016-01/cleaning-kitchen-625_625x350_61454157830.jpg?downsize=630:380&output-quality=70&output-format=webp",
             title: "Cleaning House Weekly",
             description: 'I am available for cleaning living rooms, kitchens, bathrooms. Equipment will need to be provided.',
@@ -41,7 +89,7 @@ export
                 name: "Adele A",
                 image: "https://material-ui.com/static/images/uxceo-128.jpg"
             }
-        },
+        },                        
         {
             image: "https://www.kveller.com/wp-content/uploads/2016/04/iStock_000031480158_Medium-1200x800.jpg",
             title: "Babysitting for ages 5-12",
