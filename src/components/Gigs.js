@@ -16,7 +16,7 @@ class Gigs extends Component {
                                         <MediaCard
                                             image={gig.image}
                                             title={gig.title}
-                                            description={gig.description}
+                                            description={gig.description.split(".")[0] + "."}
                                             button={gig.button}
                                             link={gig.link}
                                         />

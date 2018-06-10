@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
+import { Card, Avatar } from '@material-ui/core';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
@@ -32,6 +32,7 @@ function PostDetail(props) {
   const { classes } = props;
   const bull = <span className={classes.bullet}>•</span>;
   const index = props.match.params.postId - 1;
+  const gig = gigs[index];
 
   return (
     <div style={{ marginTop: 70, marginBottom: 70 }}>
@@ -43,18 +44,33 @@ function PostDetail(props) {
                 <Typography variant="headline" component="h2">
 
                   {
-                    gigs[index].title
+                    gig.title
                   }
                 </Typography>
+
                 <Typography className={classes.pos} color="textSecondary">
-               
-                      <i className={`fas ${gigs[index].icon}`} style={{ color: '#bdbdbd' }}></i>
-                      <span style={{ padding: 5 }}>{gigs[index].category}</span>
-                 
+
+                  <i className={`fas ${gig.icon}`} style={{ color: '#bdbdbd' }}></i>
+                  <span style={{ padding: 5 }}>{gig.category}</span>
+
                 </Typography>
+                <div style={{ display: 'flex' }}>
+                  <Avatar
+                    alt={gig.author.name}
+                    src={gig.author.image}
+                  />
+                  <Typography color="textSecondary">
+
+                    {gig.author.name}
+
+                  </Typography>
+                </div>
+                <img src={gig.image} />
+                <hr />
+
                 <Typography component="p">
                   {
-                    gigs[index].description
+                    gig.description
                   }
                   <br />
                 </Typography>
@@ -66,7 +82,7 @@ function PostDetail(props) {
               </CardActions>
             </Card>
           </Col>
-          <Col sm={2} debug>
+          <Col sm={2}>
 
           </Col>
         </Row>

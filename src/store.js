@@ -36,7 +36,11 @@ export
             name: 'Book this',
             button: '',
             link: 'post/',
-            icon: 'fa-car'
+            icon: 'fa-car',
+            author: {
+                name: "Adele A",
+                image: "https://material-ui.com/static/images/uxceo-128.jpg"
+            }
         },
         {
             image: "https://www.kveller.com/wp-content/uploads/2016/04/iStock_000031480158_Medium-1200x800.jpg",
@@ -47,6 +51,11 @@ export
             payment: true,
             button: '',
             link: 'post/',
+            icon: 'fa-car',
+            author: {
+                name: "Adele A",
+                image: "https://material-ui.com/static/images/uxceo-128.jpg"
+            }
         },
         {
             image: "http://img1.mashed.com/img/gallery/easy-dishes-that-make-you-seem-like-a-professional-chef/intro.jpg",
@@ -57,6 +66,11 @@ export
             payment: true,
             button: '',
             link: 'post/',
+            icon: 'fa-car',
+            author: {
+                name: "Adele A",
+                image: "https://material-ui.com/static/images/uxceo-128.jpg"
+            }
         },
         {
             image: "http://www.stlawu.edu/sites/default/files/page-images/ASUtutoring_003s_0.jpg",
@@ -67,6 +81,11 @@ export
             payment: true,
             button: '',
             link: 'post/',
+            icon: 'fa-car',
+            author: {
+                name: "Adele A",
+                image: "https://material-ui.com/static/images/uxceo-128.jpg"
+            }
         },
     ]
 export const explainers = [
