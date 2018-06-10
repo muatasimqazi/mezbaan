@@ -20,7 +20,7 @@ render() {
                 <Row>
                     <Col sm={8} >
                         <Typography variant="headline" component="h3" style={styles.content}>
-                        <i class="fab fa-facebook" style={{padding:'10px'}}></i><i class="fab fa-twitter" style={{padding:'10px'}}></i><i class="fab fa-instagram" style={{padding:'10px'}}></i>
+                        <i className="fab fa-facebook" style={{padding:'10px'}}></i><i className="fab fa-twitter" style={{padding:'10px'}}></i><i className="fab fa-instagram" style={{padding:'10px'}}></i>
             </Typography>
                         <Typography component="p" style={styles.content}>
                             Check Us Out On Social Media

@@ -12,11 +12,12 @@ import { suggestions, gigs } from '../store';
 function renderInput(inputProps) {
   const { classes, ref, ...other } = inputProps;
 
+
   return (
+    <form onSubmit={(e) => inputProps.history.push("/features/one")}>
     <TextField
         style={{backgroundColor: 'white', paddingTop: 12,paddingBottom: 12}}
       fullWidth
-
       InputProps={{
         inputRef: ref,
         classes: {
@@ -25,11 +26,13 @@ function renderInput(inputProps) {
         ...other,
       }}
     />
+    </form>
   );
 }
 
 function renderSuggestion(suggestion, { query, isHighlighted }) {
   const matches = match(suggestion.label, query);
+  console.log(query)
   const parts = parse(suggestion.label, matches);
 
   return (
@@ -37,14 +40,17 @@ function renderSuggestion(suggestion, { query, isHighlighted }) {
       <div>
         {parts.map((part, index) => {
           return part.highlight ? (
+           
             <span key={String(index)} style={{ fontWeight: 300 }}>
               {part.text}
             </span>
+           
           ) : (
             <strong key={String(index)} style={{ fontWeight: 500 }}>
               {part.text}
             </strong>
           );
+         
         })}
       </div>
     </MenuItem>
@@ -130,10 +136,12 @@ class Search extends React.Component {
     this.setState({
       value: newValue,
     });
+
   };
 
   render() {
     const { classes } = this.props;
+  
 
     return (
       <Autosuggest
@@ -156,6 +164,7 @@ class Search extends React.Component {
           value: this.state.value,
           onChange: this.handleChange,
         }}
+        
       />
     );
   }

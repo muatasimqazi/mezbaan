@@ -38,7 +38,6 @@ function FeatureView(props) {
             
             console.log(filterdGigs);
         
-          
             return (
               <div style={{ marginTop: 70, marginBottom: 70 }}>
                 <Container>
