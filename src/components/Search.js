@@ -14,7 +14,7 @@ function renderInput(inputProps) {
 
 
   return (
-    <form onSubmit={(e) => inputProps.history.push("/features/one")}>
+    <form>
     <TextField
         style={{backgroundColor: 'white', paddingTop: 12,paddingBottom: 12}}
       fullWidth
