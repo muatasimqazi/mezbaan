@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
+import { Card, Avatar } from '@material-ui/core';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { Container, Row, Col } from 'react-grid-system';
+import { gigs } from '../store';
 
 const styles = {
   card: {
     minWidth: 275,
     textAlign: 'left',
-    maxWidth: 800,
-    marginTop: 24,
   },
   bullet: {
     display: 'inline-block',
@@ -31,28 +31,68 @@ const styles = {
 function PostDetail(props) {
   const { classes } = props;
   const bull = <span className={classes.bullet}>•</span>;
+  const index = props.match.params.postId;
+
+
+  const gig = gigs.filter(gig => gig.id === parseInt(index))[0];
+  console.log(gig)
+
+
 
   return (
-    <div>
+    <div style={{ marginTop: 70, marginBottom: 70 }}>
+      <Container>
+        <Row>
+          <Col sm={10}>
+            <Card elevation={0} className={classes.card}>
+              <CardContent>
+                <Typography variant="headline" component="h2">
 
-      <Card elevation = {0} className={classes.card}>
-        <CardContent>
-          <Typography variant="headline" component="h2">
-            Title
-          </Typography>
-          <Typography className={classes.pos} color="textSecondary">
-            category
-          </Typography>
-          <Typography component="p">
-            description jdhkjashdkahskdhsak adlkjlasjdajs hsdkjahksahksaj hsakhksahashsalkh
-            more description jhdkjahdkahsdkahskdhjaljdsajdaslkjads jhsdkjhsadhsd hdHSADL LjdljsldJ
-            this goes on...<br />
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">Book Now</Button>
-        </CardActions>
-      </Card>
+                  {
+                    gig.title
+                  }
+                </Typography>
+
+                <Typography className={classes.pos} color="textSecondary">
+
+                  <i className={`fas ${gig.icon}`} style={{ color: '#bdbdbd' }}></i>
+                  <span style={{ padding: 5 }}>{gig.category}</span>
+
+                </Typography>
+                <div style={{ display: 'flex', marginBottom: 20 }}>
+                  <Avatar
+                    alt={gig.author.name}
+                    src={gig.author.image}
+
+                  />
+                  <Typography color="textSecondary"  style={{padding: 5}}>
+
+                    {gig.author.name}
+
+                  </Typography>
+                </div>
+                <img src={gig.image} />
+                <hr />
+
+                <Typography component="p">
+                  {
+                    gig.description
+                  }
+                  <br />
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button variant="contained" color="seconday">
+                  Book Now
+      </Button>
+              </CardActions>
+            </Card>
+          </Col>
+          <Col sm={2}>
+
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

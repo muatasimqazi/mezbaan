@@ -9,6 +9,7 @@ const styles = {
         backgroundColor: '#F9FAFB',
         marginTop: 20,
         marginBottom: 20,
+        padding: 20,
         paddingTop: '6em',
     },
     icons: {
@@ -36,7 +37,7 @@ class ExplainView extends Component {
 
                                 <Grid container direction={index % 2 == 0 ? "row-reverse" : "row"} spacing={24} key={index} style={styles.icons}>
                                     <Grid item sm={4} xs={2} style={{ alignSelf: 'baseline' }}>
-                                        <Icon style={styles.icons}>{item.icon}</Icon>
+                                    <i className={`fas ${item.icon}`} style={{color: '#bdbdbd'}}></i>
                                     </Grid>
                                     <Grid item sm={8} xs={10}>
                                         <Fragment>
@@ -45,14 +46,14 @@ class ExplainView extends Component {
                                                 <Typography
                                                     align="left"
                                                     variant="title"
-                                                    style={{ padding: 10, color: '#242A30' }}
+                                                    style={{ padding: 10, color: '#0000008a' }}
                                                 >
-                                                    Describe the task
+                                                    {item.title}
 
                                             </Typography>
                                             </div>
                                             <Typography align="left">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                {item.description}
                                     </Typography>
                                         </Fragment>
                                     </Grid>

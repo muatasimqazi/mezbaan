@@ -1,41 +1,53 @@
-//@ts-check
 import React from 'react';
 import hero from '../images/hero-2.png';
 import { Typography } from '@material-ui/core';
+import Search from './Search';
+import { Container, Row, Col } from 'react-grid-system';
+import { Parallax, Background } from 'react-parallax';
 
 const styles = {
-    /* The hero image */
+    heroContainer: {
+        height: '95vh',
+        background: 'linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0))'
+    },
     hero: {
-        height: '100vh',
-    },
-    heroImage: {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(${hero})`,
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        position: 'relative',
-        height: '88vh',
-    },
-
-    heroText: {
-        textAlign: 'center',
+        padding: 50,
         position: 'absolute',
         top: '50%',
         left: '50%',
-        transform: 'translate(-50%, -50%)',
+        transform: 'translate(-50%,-50%)',
+    },
+
+    heroText: {
         color: 'white',
+        fontWeight: 200,
+        textAlign: 'center'
     },
 }
 
 const Hero = () => (
-    <div style={styles.hero}>
-        <div style={styles.heroImage}>
-            <div style={styles.heroText}>
-            <Typography variant="display1" style={{'color': 'white'}}>Our mission is to connect people through culture and communities.</Typography>
-                
-                
+    <div style={styles.heros}>
+        <Parallax
+            bgImage={hero}
+            bgImageAlt="hero image"
+            strength={200}
+        >
+            <div style={styles.heroContainer}>
+                <Container style={{ marginTop: 64, marginBottom: 50, top: '60vh' }}>
+                    <Row style={{ justifyContent: 'space-around' }}>
+                        <Col xs={8}>
+                            <Search />
+                        </Col>
+                    </Row>
+                </Container>
+                <div style={styles.hero}>
+                    <Typography variant="display1" style={styles.heroText}>
+                        Connecting people through culture and communities
+                    </Typography>
+                </div>
             </div>
-        </div>
+        </Parallax>
+
     </div>
 );
 
